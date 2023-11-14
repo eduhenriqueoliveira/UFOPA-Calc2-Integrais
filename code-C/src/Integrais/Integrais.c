@@ -1,4 +1,4 @@
-#include "pontoMedio.h"
+#include "Integrais.h"
 
 double deltaX(int b, int a, int n){
     return (double)(b-a)/n;
@@ -26,4 +26,8 @@ double integralPorPontoMedio(int a, int b, int qntQuadrados, double (*funcao)(do
 
     //  retorna o resultado*dX por causa da fórmula
     return resultado*dX;
+}
+
+double integralDefinida(int a, int b, double (*funcaoIntegrada)(double)){
+    return (funcaoIntegrada(b)-funcaoIntegrada(a));
 }
