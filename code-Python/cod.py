@@ -1,4 +1,4 @@
-def func(x):
+def f(x):
     return (1/x)
 
 def delt_x(b,a,n):
@@ -17,4 +17,4 @@ def integralPorPontoMedio(a, b, quantidadeDeQuadrados, funcao):
         resultado+=funcao(i)
     return resultado*dX
 
-print(integralPorPontoMedio(1,2,5,func))
+print(integralPorPontoMedio(1,2,5,f))

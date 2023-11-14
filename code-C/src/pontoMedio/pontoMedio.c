@@ -1,8 +1,4 @@
-#include <stdio.h>
-
-double func(double x){
-    return 1.0/x;
-}
+#include "pontoMedio.h"
 
 double deltaX(int b, int a, int n){
     return (double)(b-a)/n;
@@ -30,7 +26,4 @@ double integralPorPontoMedio(int a, int b, int qntQuadrados, double (*funcao)(do
 
     //  retorna o resultado*dX por causa da fórmula
     return resultado*dX;
-}
-void main(){
-    printf("Ponto a: %d\nPonto b: %d\nQuantidade de quadrados: %d\nValor da integral: %lf\n",1,2,5,integralPorPontoMedio(1,2,5,func));
 }
