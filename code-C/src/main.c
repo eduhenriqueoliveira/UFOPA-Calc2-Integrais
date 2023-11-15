@@ -9,11 +9,11 @@ void limpaTela();
 
 void main(){
     /*
-            cond    -> Variável que armazenará a condição da estrutura de repetição
-            opCode  -> Variável onde será armazenado a escolha do usuário
-                n   -> Quantidade de quadrados
-                a   -> Ponto "a" (ou inicial) da integral
-                b   -> Ponto "b" (ou final) da integral
+     *         cond -> Variável que armazenará a condição da estrutura de repetição
+     *       opCode -> Variável onde será armazenado a escolha do usuário
+     *           n  -> Quantidade de quadrados
+     *           a  -> Ponto "a" (ou inicial) da integral
+     *           b  -> Ponto "b" (ou final) da integral
     */
     int cond, opCode, n, a, b;
     do{

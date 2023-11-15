@@ -12,19 +12,18 @@ double integralPorPontoMedio(int a, int b, int qntQuadrados, double (*funcao)(do
     double resultado=0;
     
     
-    //  Laço para fazer o somatório
-    //  (2*a+dX)/2 == (a+(a+dX))/2 
-    /*
-        ! (a+(a+dX))/2 <- função inicial, 
-        * o primeiro a vem do ponto inicial
-        * a+dX é o ponto final do quadrado mais próximo
-        * divide por 2 pra achar o meio, começa a variar com dX em sequencia a partir daí
+    /*  
+        ? Laço para fazer o somatório
+        ! Ponto inicial == (x0+x1)/2
+        *            x0 == a
+        *            x1 == (a+dX)
+        !  (a+(a+dX))/2 == (2*a+dX)/2
     */
     for(double i=(2*a+dX)/2; i<=b;i+=dX){
         resultado+=funcao(i);
     }
 
-    //  retorna o resultado*dX por causa da fórmula
+    //  * retorna o resultado*dX por causa da fórmula
     return resultado*dX;
 }
 
