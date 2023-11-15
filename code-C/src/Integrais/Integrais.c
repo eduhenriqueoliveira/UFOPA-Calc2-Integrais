@@ -28,5 +28,5 @@ double integralPorPontoMedio(int a, int b, int qntQuadrados, double (*funcao)(do
 }
 
 double integralDefinida(int a, int b, double (*funcaoIntegrada)(double)){
-    return (funcaoIntegrada(b)-funcaoIntegrada(a));
+    return (funcaoIntegrada(b)-funcaoIntegrada(a)); 
 }
